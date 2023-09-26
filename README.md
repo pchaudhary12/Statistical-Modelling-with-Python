@@ -88,7 +88,7 @@
 #### Removing Rating and recreating model with 'Bikes Available'(dependent variable) and 'Distance' Independent variable
 
 ![Alt text](<Screenshot 2023-09-25 203611.png>)
- 
+
 
 #### Even after removing Rating(indepedent variable), there is no effect of distance on Bikes Available for each Sations
 
@@ -114,4 +114,4 @@
 
 ## Future Goals
 
-![Alt text](<More time-1.png>)
+![Alt text](<More time.png>)
