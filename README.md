@@ -5,13 +5,17 @@
 ######    We are working with Python to Create Statistical Model and finding potential Relation between different features in our Data.
 
 ---> Project is starting with gathering data from different sources using differenet APIs(More detail in process).
+
 ---> Joining collected Data and create a Database in Sqlite.
----> Create Tables for the data in Database and get a final result Data with all the tables for further analysis
+
+---> Create Tables for the data in Database and get a final result Data with all the tables for further analysis.
+
 ---> Performing EDA :
                     Visualizing Data to Identify any outliers and checking Distributions  
                     Data Cleaning 
                     Grouping and Filtering Data
                     Performing Hypothesis to check significance between different features
+
 ---> Create  Statistical Model:
                     Creating Model to check for correlations and for prediction between dependent variable and different independent variables.
 
@@ -67,30 +71,8 @@
 
 ---> Created a Linear Regression Model between 'Bikes Available' (dependent variable) and ['Distance', 'Rating'] (independent variables)
 
+![Alt text](result.png)
 
-                         OLS Regression Results                            
-==============================================================================
-Dep. Variable:        Bikes Available   R-squared:                       0.015
-Model:                            OLS   Adj. R-squared:                  0.015
-Method:                 Least Squares   F-statistic:                     528.5
-Date:                Mon, 25 Sep 2023   Prob (F-statistic):          1.72e-228
-Time:                        16:12:59   Log-Likelihood:            -2.3149e+05
-No. Observations:               67394   AIC:                         4.630e+05
-Df Residuals:                   67391   BIC:                         4.630e+05
-Df Model:                           2                                         
-Covariance Type:            nonrobust                                         
-==============================================================================
-                 coef    std err          t      P>|t|      [0.025      0.975]
-------------------------------------------------------------------------------
-const         -0.8938      0.258     -3.462      0.001      -1.400      -0.388
-distance       0.0003      0.000      2.883      0.004       0.000       0.001
-rating         1.0960      0.034     32.452      0.000       1.030       1.162
-==============================================================================
-Omnibus:                    17246.019   Durbin-Watson:                   0.037
-Prob(Omnibus):                  0.000   Jarque-Bera (JB):            43260.280
-Skew:                           1.407   Prob(JB):                         0.00
-Kurtosis:                       5.736   Cond. No.                     6.12e+03
-==============================================================================
 
 #### Interpretation of the model
 (1) Model Fit: Adj. R-squared is very low, i.e it only (1.5)% of variance in Bikes Available is explained by the independent variable
@@ -105,28 +87,8 @@ Kurtosis:                       5.736   Cond. No.                     6.12e+03
 
 #### Removing Rating and recreating model with 'Bikes Available'(dependent variable) and 'Distance' Independent variable
 
-                            OLS Regression Results                            
-==============================================================================
-Dep. Variable:        Bikes Available   R-squared:                       0.000
-Model:                            OLS   Adj. R-squared:                  0.000
-Method:                 Least Squares   F-statistic:                     3.889
-Date:                Mon, 25 Sep 2023   Prob (F-statistic):             0.0486
-Time:                        16:12:51   Log-Likelihood:            -2.3201e+05
-No. Observations:               67394   AIC:                         4.640e+05
-Df Residuals:                   67392   BIC:                         4.640e+05
-Df Model:                           1                                         
-Covariance Type:            nonrobust                                         
-==============================================================================
-                 coef    std err          t      P>|t|      [0.025      0.975]
-------------------------------------------------------------------------------
-const          7.0942      0.079     90.331      0.000       6.940       7.248
-distance       0.0002      0.000      1.972      0.049     1.4e-06       0.000
-==============================================================================
-Omnibus:                    17121.708   Durbin-Watson:                   0.013
-Prob(Omnibus):                  0.000   Jarque-Bera (JB):            42541.299
-Skew:                           1.402   Prob(JB):                         0.00
-Kurtosis:                       5.700   Cond. No.                     1.83e+03
-==============================================================================
+![Alt text](<Screenshot 2023-09-25 203611.png>)
+ 
 
 #### Even after removing Rating(indepedent variable), there is no effect of distance on Bikes Available for each Sations
 
@@ -152,4 +114,4 @@ Kurtosis:                       5.700   Cond. No.                     1.83e+03
 
 ## Future Goals
 
-![Alt text](image-1.png)
+![Alt text](<More time-1.png>)
